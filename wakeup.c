@@ -42,11 +42,11 @@ int showhelp(_TCHAR * arg0)
 	printf("   - Wake up computers with several separator's style:\n\n");
 	printf("\t%s 00:aa:bb:cc:dd:ee 00-01-02-03-04-05 11.22/33.. \n\n", s);
 	printf("   - Wake up several computers with typos:\n\n");
-	printf("\t%s 701:::b3b:5c4c 100-011-102-031\n\n", s);
+	printf("\t%s 701:::b3b:5c4c 192.168.1.1/16\n\n", s);
 	printf("     The program will pick the last 2 characters per-element,\n");
 	printf("     and fills up missing digits with zero. In this case,\n");
 	printf("     it would be equal with typing command:\n\n");
-	printf("\t   %s 01:00:00:3b:4c:00 00-11-02-31-00-00\n\n", s);
+	printf("\t   %s 01:00:00:3b:4c:00 92-68-01-01-16-00\n\n", s);
 	//printf("\n");
 	printf(" ====================================================\n");
 	printf(" Copyright (c) 2003-2011\n");
