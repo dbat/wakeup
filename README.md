@@ -36,24 +36,21 @@ Wake up computers on connected LAN
 
  EXAMPLES:
 
-  - Wake up a single computer:
-   - 
+    - Wake up a single computer:
+     
         wakeup.exe 00:aa:bb:cc:dd:ee
 
-  - Wake up computers with several separator's style:
-   - 
+    - Wake up computers with several separator's style:
+     
         wakeup.exe 00:aa:bb:cc:dd:ee 00-01-02-03-04-05 11.22/33..
 
-  - Wake up several computers with typos:
-   - 
-        wakeup.exe 701:::b3b:5c4c 100-011-102-031
+    - Wake up several computers with typos:
+     
+        wakeup.exe 701:::b3b:5c4c 192.168.1.1/16
 
-     The program will pick the last 2 characters per-element,
+        The program will pick the last 2 characters per-element,
+        and fills up missing digits with zero. In this case,
+        it would be equal with typing command:
      
-     and fills up missing digits with zero. In this case,
-     
-     it would be equal with typing command:
-     
-      wakeup.exe 01:00:00:3b:4c:00 00-11-02-31-00-00
-      
+            wakeup.exe 01:00:00:3b:4c:00 92-68-01-01-16-00
       
